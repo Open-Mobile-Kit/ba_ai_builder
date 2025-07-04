@@ -224,7 +224,7 @@ class AIBuilderOrchestrator:
             # Plan features
             output_dir = os.path.join(self.output_base, self.state_dirs[3])
             features_result = feature_planner.plan_features(analysis_result, architecture_result, 
-                                                         detailed_features=True, 
+                                                         detailed_features=generate_detailed_features, 
                                                          output_dir=output_dir)
             # Save features
             features_file = feature_planner.save_feature_plan(features_result, output_dir)
