@@ -67,6 +67,8 @@ ai_builder/
 
 ```bash
 pip install -r requirements.txt
+or
+python setup.py
 ```
 
 ### 2. Configure the System
