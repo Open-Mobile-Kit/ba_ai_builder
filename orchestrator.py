@@ -23,12 +23,12 @@ class AIBuilderOrchestrator:
         self.version = config.output.current_version
         self.output_base = config.get_output_path()
         self.state_dirs = {
-            1: "state_1_analysis",
-            2: "state_2_architecture", 
-            3: "state_3_features",
-            4: "state_4_documents",
-            5: "state_5_validation",
-            6: "state_6_final"
+            1: "analysis",
+            2: "architecture", 
+            3: "features_list",
+            4: "documents",
+            5: "validation",
+            6: "report"
         }
         self.build_state = {}
         self._setup_output_structure()
