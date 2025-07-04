@@ -25,6 +25,7 @@ Please design a detailed system architecture that includes:
 ## 3. Technology Stack Recommendations
 - Backend technologies and frameworks
 - Frontend technologies and frameworks
+- Mobile technologies and frameworks
 - Database technologies
 - Infrastructure and deployment technologies
 - Third-party services and APIs
