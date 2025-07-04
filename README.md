@@ -50,12 +50,12 @@ ai_builder/
 │   └── srs_template.md
 │
 ├── output/v1/           # Output directory
-│   ├── state_1_analysis/
-│   ├── state_2_architecture/
-│   ├── state_3_features/
-│   ├── state_4_documents/
-│   ├── state_5_validation/
-│   ├── state_6_final/
+│   ├── analysis/
+│   ├── architecture/
+│   ├── features/
+│   ├── documents/
+│   ├── validation/
+│   ├── report/
 │   └── logs/
 │
 └── vector_store/        # ChromaDB storage
@@ -154,12 +154,12 @@ result = orchestrator.build_project(requirements)
 With a custom output directory, the structure will be created as follows:
 ```
 /custom/output/path/v1/
-├── state_1_analysis/
-├── state_2_architecture/
-├── state_3_features/
-├── state_4_documents/
-├── state_5_validation/
-├── state_6_final/
+├── analysis/
+├── architecture/
+├── features/
+├── documents/
+├── validation/
+├── report/
 └── logs/
 ```
 
@@ -169,19 +169,19 @@ The system generates a standard output structure:
 
 ```
 output/v1/
-├── state_1_analysis/
+├── analysis/
 │   └── analysis_overview.md       # Overview of analysis
-├── state_2_architecture/
+├── architecture/
 │   └── system_architecture.md     # System architecture design
-├── state_3_features/
+├── features/
 │   ├── features/
 │   └── feature_list.md           # Feature list
-├── state_4_documents/
+├── documents/
 │   ├── brd.md                    # Business Requirements Document
 │   └── srs.md                    # Software Requirements Specification
-├── state_5_validation/
+├── validation/
 │   └── validation_report.json    # Validation report
-├── state_6_final/
+├── report/
 │   └── final_report.md          # Final summary report
 └── logs/
         ├── history.jsonl            # Build history
