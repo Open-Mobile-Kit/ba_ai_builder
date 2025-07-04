@@ -1,0 +1,90 @@
+Create a comprehensive Business Requirements Document (BRD) based on the following:
+
+**Project Analysis:**
+{{analysis}}
+
+**Feature Plan:**
+{{features}}
+
+Please create a professional BRD that includes:
+
+# Business Requirements Document
+
+## 1. Executive Summary
+- Project overview and background
+- Business objectives and goals
+- Scope and deliverables
+- Success criteria and benefits
+- Budget and timeline overview
+
+## 2. Business Context
+- Current state analysis
+- Business problem or opportunity
+- Market analysis and competitive landscape
+- Regulatory and compliance requirements
+- Stakeholder analysis
+
+## 3. Business Objectives
+- Primary business objectives
+- Secondary objectives
+- Success metrics and KPIs
+- Return on investment (ROI) expectations
+- Risk mitigation goals
+
+## 4. Functional Requirements
+### 4.1 Core Business Functions
+- Primary business processes
+- User roles and responsibilities
+- Business rules and workflows
+- Data requirements
+
+### 4.2 User Requirements
+- User personas and profiles
+- User stories and scenarios
+- User experience requirements
+- Accessibility requirements
+
+### 4.3 System Requirements
+- Functional specifications
+- Performance requirements
+- Integration requirements
+- Reporting and analytics needs
+
+## 5. Non-Functional Requirements
+- Performance and scalability requirements
+- Security and privacy requirements
+- Reliability and availability requirements
+- Usability and user experience requirements
+- Compliance and regulatory requirements
+
+## 6. Business Rules and Constraints
+- Business logic and validation rules
+- Data governance and quality rules
+- Approval workflows and processes
+- Audit and compliance rules
+
+## 7. Assumptions and Dependencies
+- Project assumptions
+- External dependencies
+- Resource dependencies
+- Technology dependencies
+
+## 8. Acceptance Criteria
+- Feature acceptance criteria
+- Performance acceptance criteria
+- Quality acceptance criteria
+- User acceptance testing requirements
+
+## 9. Risk Analysis
+- Business risks and mitigation strategies
+- Technical risks and contingencies
+- Project risks and management plans
+- Change management considerations
+
+## 10. Implementation Approach
+- Phased implementation strategy
+- Change management plan
+- Training and support requirements
+- Communication plan
+
+Use professional business language and ensure all requirements are specific, measurable, and testable. Include clear acceptance criteria for each requirement.

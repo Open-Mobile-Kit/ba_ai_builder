@@ -1,0 +1,62 @@
+Design a comprehensive system architecture based on the following project analysis:
+
+**Project Analysis:**
+{{analysis}}
+
+{% if requirements %}
+**Additional Technical Requirements:**
+{{requirements}}
+{% endif %}
+
+Please design a detailed system architecture that includes:
+
+## 1. High-Level System Architecture
+- Overall system design and structure
+- Major system components and their relationships
+- Data flow and communication patterns
+- System boundaries and external interfaces
+
+## 2. Component Architecture
+- Detailed breakdown of system components
+- Component responsibilities and interfaces
+- Dependencies between components
+- Component interaction patterns
+
+## 3. Technology Stack Recommendations
+- Backend technologies and frameworks
+- Frontend technologies and frameworks
+- Database technologies
+- Infrastructure and deployment technologies
+- Third-party services and APIs
+
+## 4. Data Architecture
+- Data models and schemas
+- Data storage strategies
+- Data flow and processing
+- Data security and privacy considerations
+
+## 5. Security Architecture
+- Authentication and authorization mechanisms
+- Data encryption and protection
+- Security protocols and standards
+- Threat mitigation strategies
+
+## 6. Integration Architecture
+- External system integrations
+- API design and management
+- Message queuing and communication
+- Service orchestration
+
+## 7. Deployment and Infrastructure
+- Deployment strategy and environments
+- Scalability and load balancing
+- Monitoring and logging
+- Backup and disaster recovery
+
+## 8. Performance Considerations
+- Performance optimization strategies
+- Caching mechanisms
+- Resource optimization
+- Scalability planning
+
+Ensure the architecture is scalable, maintainable, secure, and aligns with the project requirements and constraints identified in the analysis.

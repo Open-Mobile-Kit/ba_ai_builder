@@ -1,0 +1,56 @@
+## 🎯 Goal:
+Generate a **BNMP** (Business Need, Mission, Process) document for a software project, following this structure:
+- Business Need
+- Mission
+- Process (with mermaid diagram or step description)
+
+---
+
+## 🧩 **1️⃣ Project Info:**
+- Project: {project_name}
+- Version: {version}
+- Created on: {created_date}
+- Author: {author}
+
+---
+
+## ✅ **2️⃣ Business Need**
+Write 2–5 sentences describing:
+- Why this project is needed
+- Current problems / pain points
+- Expected benefits & overall goals
+
+> Example:  
+> “Currently, the booking and customer management process is manual, time-consuming, and error-prone.  
+> This project aims to digitize the entire workflow, reduce operational time by 30%, and improve data accuracy.”
+
+---
+
+## 🚀 **3️⃣ Mission**
+- Define specific, measurable objectives (SMART)
+- Example:
+  - Increase order processing speed by {X}%
+  - Reduce data entry errors below {Y}%
+  - Provide real-time dashboards for managers
+
+---
+
+## 🔄 **4️⃣ Process**
+- Describe the core business process
+- Use either text bullets or a mermaid diagram
+
+### Example as text:
+1. User logs in
+2. Selects service
+3. Books schedule / makes payment
+4. Staff confirms
+5. Process is completed & logged
+
+### Or as a mermaid diagram:
+```mermaid
+flowchart TD
+    A[User Login] --> B[Select Service]
+    B --> C[Book Schedule]
+    C --> D[Make Payment]
+    D --> E[Staff Confirms]
+    E --> F[Complete & Log]

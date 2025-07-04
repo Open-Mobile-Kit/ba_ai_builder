@@ -1,0 +1,58 @@
+Generate a detailed specification for the following feature in the system.
+
+## Context:
+- **Project Analysis:** {{analysis}}
+- **System Architecture:** {{architecture}}
+- **Feature Name:** {{feature_name}}
+
+---
+
+## Instructions:
+Write a detailed feature specification in Markdown, covering these sections:
+
+1. **Overview**
+   - Feature ID
+   - Module / Category
+   - Purpose
+   - Priority (High / Medium / Low)
+   - Status (Planned / In Progress / Done)
+
+2. **Description & Scope**
+   - What does this feature do?
+   - What problem does it solve?
+
+3. **User Personas & Use Cases**
+   - List user roles or systems interacting with this feature
+   - Example use cases
+
+4. **Acceptance Criteria**
+   - List clear, testable criteria for feature completion
+
+5. **Main Flow**
+   - Step-by-step description of how the feature works
+
+6. **Business Rules**
+   - List any business rules or constraints
+
+7. **Validation & Error Cases**
+   - Table of possible error cases and expected results
+
+8. **Input & Output Data**
+   - Table of input/output fields, types, and descriptions
+
+9. **Dependencies & Prerequisites**
+   - APIs, services, or external systems this feature depends on
+   - Prerequisite features or modules
+
+10. **Estimated Effort**
+    - T-shirt sizing (XS, S, M, L, XL)
+
+11. **Success Metrics**
+    - How will success be measured?
+
+12. **Additional Notes**
+    - Any other relevant information
+
+---
+
+**Format your output using Markdown and fill in all sections with as much detail as possible.**

@@ -1,0 +1,22 @@
+llm:
+  provider: ollama  # Options: ollama, openai, anthropic, gemini
+  model_name: llama3.1:8b
+  temperature: 0.2
+  max_tokens: 4000
+  api_key: ""  # For OpenAI, Anthropic, etc.
+  base_url: "http://localhost:11434"  # For Ollama
+
+vector_store:
+  type: chromadb
+  persist_directory: "./vector_store"
+  collection_name: "ai_builder_docs"
+
+output:
+  base_path: "./output"
+  current_version: "v1"
+  log_level: "INFO"
+
+project:
+  name: "AI Builder Project"
+  description: "Automated business analysis and documentation generation"
+  author: "AI Builder System"

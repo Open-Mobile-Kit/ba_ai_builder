@@ -1,0 +1,172 @@
+Create a detailed Software Requirements Specification (SRS) based on the following:
+
+**Project Analysis:**
+{{analysis}}
+
+**System Architecture:**
+{{architecture}}
+
+**Feature Plan:**
+{{features}}
+
+Please create a comprehensive SRS that includes:
+
+# Software Requirements Specification
+
+## 1. Introduction
+### 1.1 Purpose
+- Document purpose and scope
+- Intended audience
+- Document conventions and references
+
+### 1.2 Product Overview
+- Product description and context
+- Product functions and capabilities
+- User characteristics and personas
+- Operating environment
+
+### 1.3 Definitions and Abbreviations
+- Glossary of terms
+- Acronyms and abbreviations
+- Technical terminology
+
+## 2. System Overview
+### 2.1 System Description
+- High-level system architecture
+- System components and modules
+- System interfaces and boundaries
+- Technology stack overview
+
+### 2.2 System Context
+- External system interfaces
+- User interfaces
+- Hardware interfaces
+- Software interfaces
+- Communication interfaces
+
+## 3. Functional Requirements
+### 3.1 System Features
+For each major feature:
+- Feature ID and name
+- Feature description and purpose
+- Functional requirements
+- Input/output specifications
+- Processing requirements
+- Error handling requirements
+
+### 3.2 User Interface Requirements
+- User interface design principles
+- Navigation requirements
+- Screen layouts and workflows
+- Input validation requirements
+- Error message specifications
+
+### 3.3 Data Requirements
+- Data models and entities
+- Data validation rules
+- Data storage requirements
+- Data processing requirements
+- Data backup and recovery
+
+## 4. Non-Functional Requirements
+### 4.1 Performance Requirements
+- Response time requirements
+- Throughput requirements
+- Capacity requirements
+- Scalability requirements
+
+### 4.2 Security Requirements
+- Authentication requirements
+- Authorization requirements
+- Data encryption requirements
+- Security protocols and standards
+- Audit and logging requirements
+
+### 4.3 Reliability and Availability
+- System availability requirements
+- Fault tolerance requirements
+- Recovery requirements
+- Backup and restore requirements
+
+### 4.4 Usability Requirements
+- User experience requirements
+- Accessibility requirements
+- Documentation requirements
+- Training requirements
+
+### 4.5 Compatibility Requirements
+- Browser compatibility
+- Operating system compatibility
+- Third-party software compatibility
+- Legacy system compatibility
+
+## 5. System Interfaces
+### 5.1 User Interfaces
+- GUI specifications
+- Command line interfaces
+- Mobile interfaces
+- API interfaces
+
+### 5.2 Hardware Interfaces
+- Server requirements
+- Network requirements
+- Storage requirements
+- Client device requirements
+
+### 5.3 Software Interfaces
+- Database interfaces
+- Third-party service interfaces
+- Operating system interfaces
+- Development tool interfaces
+
+### 5.4 Communication Interfaces
+- Network protocols
+- Data formats and standards
+- Message queuing requirements
+- API specifications
+
+## 6. Quality Attributes
+### 6.1 Maintainability
+- Code quality standards
+- Documentation requirements
+- Testing requirements
+- Version control requirements
+
+### 6.2 Portability
+- Platform independence requirements
+- Configuration management
+- Deployment requirements
+
+### 6.3 Testability
+- Testing framework requirements
+- Test data requirements
+- Automated testing requirements
+- Performance testing requirements
+
+## 7. Design Constraints
+### 7.1 Technology Constraints
+- Programming language requirements
+- Framework and library constraints
+- Database requirements
+- Platform constraints
+
+### 7.2 Business Constraints
+- Budget constraints
+- Timeline constraints
+- Resource constraints
+- Regulatory constraints
+
+## 8. Verification and Validation
+### 8.1 Testing Requirements
+- Unit testing requirements
+- Integration testing requirements
+- System testing requirements
+- User acceptance testing requirements
+
+### 8.2 Validation Criteria
+- Functional validation criteria
+- Performance validation criteria
+- Security validation criteria
+- Usability validation criteria
+
+Use precise technical language and include specific, measurable, and testable requirements. Ensure traceability between requirements and design elements.

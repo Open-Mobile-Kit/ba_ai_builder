@@ -1,0 +1,73 @@
+Create a comprehensive feature plan based on the project analysis and system architecture:
+
+**Project Analysis:**
+{{analysis}}
+
+**System Architecture:**
+{{architecture}}
+
+Please create a detailed feature plan that includes:
+
+## 1. Core Features (Must-Have)
+List the essential features that are critical for the system to meet its primary objectives:
+- Feature name and description
+- Business value and justification
+- User stories and acceptance criteria
+- Technical complexity assessment
+
+## 2. Enhanced Features (Should-Have)
+List important features that significantly improve the system but are not critical for initial release:
+- Feature name and description
+- Business value and impact
+- Dependencies on core features
+- Implementation complexity
+
+## 3. Optional Features (Nice-to-Have)
+List features that would be valuable but can be deferred to future releases:
+- Feature name and description
+- Potential business impact
+- Resource requirements
+- Future implementation considerations
+
+## 4. Feature Prioritization Matrix
+Provide a prioritization framework considering:
+- Business value/impact
+- Technical complexity
+- Resource requirements
+- Dependencies
+- Risk factors
+
+## 5. Implementation Roadmap
+Create a phased implementation plan:
+- Phase 1: MVP features
+- Phase 2: Core enhancement features
+- Phase 3: Advanced features
+- Phase 4: Future expansion features
+
+## 6. User Experience Features
+- User interface requirements
+- User workflow optimizations
+- Accessibility features
+- Mobile responsiveness
+
+## 7. Technical Features
+- Performance optimization features
+- Security features
+- Monitoring and analytics features
+- Administrative features
+
+## 8. Integration Features
+- Third-party service integrations
+- API capabilities
+- Data import/export features
+- Legacy system integrations
+
+For each feature, provide:
+- Clear description and scope
+- User personas and use cases
+- Acceptance criteria
+- Estimated effort (T-shirt sizing: XS, S, M, L, XL)
+- Dependencies and prerequisites
+- Success metrics
+
+Ensure features align with the technical architecture and business requirements identified in the analysis phase.

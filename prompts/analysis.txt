@@ -1,0 +1,56 @@
+Analyze the following project requirements and provide a comprehensive analysis:
+
+**Project Requirements:**
+{{requirements}}
+
+{% if context %}
+**Additional Context:**
+{{context}}
+{% endif %}
+
+Please provide a detailed analysis covering:
+
+## 1. Project Overview and Objectives
+- Main goals and objectives
+- Project scope and boundaries
+- Expected outcomes and deliverables
+
+## 2. Key Stakeholders and Their Needs
+- Primary stakeholders
+- Secondary stakeholders
+- Stakeholder requirements and expectations
+- Success criteria for each stakeholder group
+
+## 3. Functional Requirements
+- Core functionalities needed
+- User interactions and workflows
+- Business rules and constraints
+- Integration requirements
+
+## 4. Non-Functional Requirements
+- Performance requirements
+- Security considerations
+- Scalability needs
+- Usability requirements
+- Compliance and regulatory requirements
+
+## 5. Technical Constraints and Considerations
+- Technology preferences or limitations
+- Budget constraints
+- Timeline constraints
+- Resource availability
+- Environmental considerations
+
+## 6. Risk Assessment
+- Technical risks
+- Business risks
+- Mitigation strategies
+- Contingency plans
+
+## 7. Success Criteria and KPIs
+- Measurable success indicators
+- Acceptance criteria
+- Quality metrics
+- Performance benchmarks
+
+Provide specific, actionable insights that will guide the subsequent architecture and feature planning phases.
