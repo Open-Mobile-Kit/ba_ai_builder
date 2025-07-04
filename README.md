@@ -1,4 +1,4 @@
-# AI Builder 🎯
+# BA AI Builder 🎯
 
 **Automated Business Analysis and Documentation Generation System**
 
