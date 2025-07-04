@@ -2,40 +2,40 @@
 
 **Automated Business Analysis and Documentation Generation System**
 
-AI Builder là một hệ thống tự động sinh tài liệu phân tích kinh doanh và kỹ thuật bằng AI, sử dụng nhiều agents phối hợp để tạo ra BRD, SRS và các tài liệu dự án chuyên nghiệp.
+AI Builder is an AI-powered system for automatically generating business and technical analysis documents, using multiple coordinated agents to create BRD, SRS, and professional project documentation.
 
-## 🚀 Tính năng chính
+## 🚀 Key Features
 
-- **Multi-Agent Architecture**: Hệ thống agents chuyên biệt (Analyzer, Architect, Feature Planner, Document Writer, Refiner, Validator)
-- **Multi-LLM Support**: Hỗ trợ nhiều provider (OpenAI, Ollama, Anthropic, Gemini)
-- **Flexible Configuration**: Cấu hình dễ dàng qua file YAML
-- **Vector Storage**: Lưu trữ và tìm kiếm tài liệu bằng ChromaDB
-- **Automated Validation**: Kiểm tra chất lượng và format tự động
-- **Iterative Refinement**: Cải thiện tài liệu dựa trên feedback
-- **Comprehensive Logging**: Tracking toàn bộ quá trình build
+- **Multi-Agent Architecture**: Specialized agents (Analyzer, Architect, Feature Planner, Document Writer, Refiner, Validator)
+- **Multi-LLM Support**: Supports multiple providers (OpenAI, Ollama, Anthropic, Gemini)
+- **Flexible Configuration**: Easily configurable via YAML files
+- **Vector Storage**: Document storage and retrieval using ChromaDB
+- **Automated Validation**: Automatic quality and format checks
+- **Iterative Refinement**: Document improvement based on feedback
+- **Comprehensive Logging**: Tracks the entire build process
 
-## 🏗️ Cấu trúc dự án
+## 🏗️ Project Structure
 
 ```
 ai_builder/
-├── agents/                 # Các AI agents
-│   ├── analyzer.py        # Phân tích yêu cầu
-│   ├── architect.py       # Thiết kế kiến trúc
-│   ├── feature_planner.py # Lập kế hoạch tính năng
-│   ├── document_writer.py # Sinh tài liệu
-│   ├── refiner.py         # Cải thiện nội dung
-│   ├── validator.py       # Kiểm tra chất lượng
-│   └── vector_manager.py  # Quản lý vector store
+├── agents/                 # AI agents
+│   ├── analyzer.py        # Requirement analysis
+│   ├── architect.py       # System architecture design
+│   ├── feature_planner.py # Feature planning
+│   ├── document_writer.py # Document generation
+│   ├── refiner.py         # Content refinement
+│   ├── validator.py       # Quality validation
+│   └── vector_manager.py  # Vector store management
 │
 ├── core/                  # Core modules
-│   ├── llm_manager.py     # Quản lý LLM providers
-│   ├── prompt_manager.py  # Quản lý prompts
-│   ├── config_manager.py  # Quản lý cấu hình
+│   ├── llm_manager.py     # LLM provider management
+│   ├── prompt_manager.py  # Prompt management
+│   ├── config_manager.py  # Configuration management
 │   └── logger.py          # Logging system
 │
-├── orchestrator.py        # Điều phối các agents
-├── main.py               # Entry point chính
-├── config.yaml           # Cấu hình hệ thống
+├── orchestrator.py        # Agent orchestration
+├── main.py               # Main entry point
+├── config.yaml           # System configuration
 ├── requirements.txt      # Dependencies
 │
 ├── prompts/              # Template prompts
@@ -61,76 +61,76 @@ ai_builder/
 └── vector_store/        # ChromaDB storage
 ```
 
-## ⚙️ Cài đặt và sử dụng
+## ⚙️ Installation and Usage
 
-### 1. Cài đặt dependencies
+### 1. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Cấu hình hệ thống
+### 2. Configure the System
 
-Chỉnh sửa file `config.yaml`:
+Edit the `config.yaml` file:
 
 ```yaml
 llm:
-  provider: ollama  # hoặc openai, anthropic, gemini
-  model_name: llama3
-  temperature: 0.2
-  max_tokens: 4000
-  api_key: ""  # Cho OpenAI, Anthropic, etc.
-  base_url: "http://localhost:11434"  # Cho Ollama
+    provider: ollama  # or openai, anthropic, gemini
+    model_name: llama3
+    temperature: 0.2
+    max_tokens: 4000
+    api_key: ""  # For OpenAI, Anthropic, etc.
+    base_url: "http://localhost:11434"  # For Ollama
 
 vector_store:
-  type: chromadb
-  persist_directory: "./vector_store"
-  collection_name: "ai_builder_docs"
+    type: chromadb
+    persist_directory: "./vector_store"
+    collection_name: "ai_builder_docs"
 
 output:
-  base_path: "./output"
-  current_version: "v1"
-  log_level: "INFO"
+    base_path: "./output"
+    current_version: "v1"
+    log_level: "INFO"
 ```
 
-### 3. Chạy AI Builder
+### 3. Run AI Builder
 
 ```bash
-# Cách 1: Truyền requirements trực tiếp
-python main.py "Xây dựng hệ thống quản lý bán hàng online với các tính năng: quản lý sản phẩm, đơn hàng, khách hàng, thanh toán"
+# Option 1: Directly pass requirements
+python main.py "Build an online sales management system with features: product management, order management, customer management, payment"
 
-# Cách 2: Từ file
+# Option 2: From a file
 python main.py requirements.txt
 
-# Cách 3: Với context bổ sung
+# Option 3: With additional context
 python main.py "Build e-commerce system" --context '{"budget": "100k", "timeline": "6 months"}'
 
-# Cách 4: Với version khác
+# Option 4: With a different version
 python main.py requirements.txt --version v2
 
-# Cách 5: Với custom output directory
+# Option 5: With a custom output directory
 python main.py requirements.txt --output-dir /path/to/custom/output
 
-# Cách 6: Tổ hợp các options
+# Option 6: Combine options
 python main.py requirements.txt --output-dir ./projects/ecommerce --version v1.1 --context context.json
 ```
 
-### 4. Refine với feedback
+### 4. Refine with Feedback
 
 ```bash
-python main.py requirements.txt --refine documents --feedback "Cần thêm chi tiết về security requirements"
+python main.py requirements.txt --refine documents --feedback "Add more details about security requirements"
 ```
 
 ## 📁 Custom Output Directories
 
-AI Builder cho phép bạn tùy chỉnh thư mục output để tổ chức dự án tốt hơn:
+AI Builder allows you to customize the output directory for better project organization:
 
 ### Command Line Usage
 ```bash
-# Sử dụng thư mục tuyệt đối
+# Use an absolute directory
 python main.py requirements.txt --output-dir /Users/username/Documents/projects/my-project
 
-# Sử dụng thư mục tương đối
+# Use a relative directory
 python main.py requirements.txt --output-dir ./projects/ecommerce
 
 # Short form
@@ -151,7 +151,7 @@ result = orchestrator.build_project(requirements)
 ```
 
 ### Output Structure
-Với custom output directory, cấu trúc sẽ được tạo như sau:
+With a custom output directory, the structure will be created as follows:
 ```
 /custom/output/path/v1/
 ├── state_1_analysis/
@@ -165,66 +165,67 @@ Với custom output directory, cấu trúc sẽ được tạo như sau:
 
 ## 📊 Output Structure
 
-Hệ thống sinh ra cấu trúc output chuẩn:
+The system generates a standard output structure:
 
 ```
 output/v1/
 ├── state_1_analysis/
-│   └── analysis_overview.md       # Phân tích tổng quan
+│   └── analysis_overview.md       # Overview of analysis
 ├── state_2_architecture/
-│   └── system_architecture.md     # Thiết kế kiến trúc
+│   └── system_architecture.md     # System architecture design
 ├── state_3_features/
-│   └── feature_list.md           # Danh sách tính năng
+│   ├── features/
+│   └── feature_list.md           # Feature list
 ├── state_4_documents/
 │   ├── brd.md                    # Business Requirements Document
 │   └── srs.md                    # Software Requirements Specification
 ├── state_5_validation/
-│   └── validation_report.json    # Báo cáo validation
+│   └── validation_report.json    # Validation report
 ├── state_6_final/
-│   └── final_report.md          # Báo cáo tổng kết
+│   └── final_report.md          # Final summary report
 └── logs/
-    ├── history.jsonl            # Lịch sử build
-    └── app.log                  # Application logs
+        ├── history.jsonl            # Build history
+        └── app.log                  # Application logs
 ```
 
 ## 🔄 Workflow
 
-1. **Analysis**: Phân tích yêu cầu và xác định stakeholders
-2. **Architecture**: Thiết kế kiến trúc hệ thống và technology stack
-3. **Feature Planning**: Lập kế hoạch tính năng và prioritization
-4. **Document Generation**: Sinh BRD, SRS và các tài liệu kỹ thuật
-5. **Validation**: Kiểm tra chất lượng và format
-6. **Final Report**: Tạo báo cáo tổng kết
+1. **Analysis**: Analyze requirements and identify stakeholders
+2. **Architecture**: Design system architecture and technology stack
+3. **Feature Planning**: Plan features and prioritize
+4. **Document Generation**: Generate BRD, SRS, and technical documents
+5. **Validation**: Check quality and format
+6. **Final Report**: Create a summary report
 
 ## 🤖 Agents
 
 ### AnalyzerAgent
-- Phân tích yêu cầu dự án
-- Xác định stakeholders và objectives
-- Đánh giá rủi ro và constraints
+- Analyze project requirements
+- Identify stakeholders and objectives
+- Assess risks and constraints
 
 ### ArchitectAgent
-- Thiết kế kiến trúc hệ thống
+- Design system architecture
 - Recommend technology stack
-- Định nghĩa components và interfaces
+- Define components and interfaces
 
 ### FeaturePlannerAgent
-- Lập kế hoạch tính năng
-- Prioritization và roadmap
-- User stories và acceptance criteria
+- Plan features
+- Prioritize and create a roadmap
+- Define user stories and acceptance criteria
 
 ### DocumentWriterAgent
-- Sinh BRD và SRS
-- Tài liệu kỹ thuật chuyên nghiệp
-- Structured format chuẩn
+- Generate BRD and SRS
+- Professional technical documentation
+- Structured standard format
 
 ### RefinerAgent
-- Cải thiện nội dung dựa trên feedback
+- Improve content based on feedback
 - Iterative refinement
 - Quality enhancement
 
 ### ValidatorAgent
-- Kiểm tra format và structure
+- Check format and structure
 - Quality scoring
 - Compliance checking
 
@@ -233,66 +234,66 @@ output/v1/
 ### Ollama (Local)
 ```yaml
 llm:
-  provider: ollama
-  model_name: llama3
-  base_url: "http://localhost:11434"
+    provider: ollama
+    model_name: llama3
+    base_url: "http://localhost:11434"
 ```
 
 ### OpenAI
 ```yaml
 llm:
-  provider: openai
-  model_name: gpt-4
-  api_key: "your-api-key"
+    provider: openai
+    model_name: gpt-4
+    api_key: "your-api-key"
 ```
 
 ### Anthropic Claude
 ```yaml
 llm:
-  provider: anthropic
-  model_name: claude-3-sonnet-20240229
-  api_key: "your-api-key"
+    provider: anthropic
+    model_name: claude-3-sonnet-20240229
+    api_key: "your-api-key"
 ```
 
 ### Google Gemini
 ```yaml
 llm:
-  provider: gemini
-  model_name: gemini-pro
-  api_key: "your-api-key"
+    provider: gemini
+    model_name: gemini-pro
+    api_key: "your-api-key"
 ```
 
 ## 📝 Customization
 
 ### Custom Prompts
-Chỉnh sửa prompts trong thư mục `prompts/`:
-- `analysis.txt`: Prompt cho phân tích
-- `architecture.txt`: Prompt cho thiết kế kiến trúc
-- `features.txt`: Prompt cho feature planning
-- `brd.txt`: Prompt cho BRD generation
-- `srs.txt`: Prompt cho SRS generation
+Edit prompts in the `prompts/` directory:
+- `analysis.txt`: Prompt for analysis
+- `architecture.txt`: Prompt for architecture design
+- `features.txt`: Prompt for feature planning
+- `brd.txt`: Prompt for BRD generation
+- `srs.txt`: Prompt for SRS generation
 
 ### Custom Templates
-Chỉnh sửa templates trong thư mục `templates/`:
-- `brd_template.md`: Template cho BRD
-- `srs_template.md`: Template cho SRS
+Edit templates in the `templates/` directory:
+- `brd_template.md`: Template for BRD
+- `srs_template.md`: Template for SRS
 
-## 🚀 Mở rộng
+## 🚀 Extensibility
 
-### Thêm Agent mới
-1. Tạo file agent trong `agents/`
-2. Implement các method cần thiết
-3. Import và sử dụng trong `orchestrator.py`
+### Add a New Agent
+1. Create an agent file in `agents/`
+2. Implement the required methods
+3. Import and use it in `orchestrator.py`
 
-### Thêm LLM Provider mới
-1. Thêm logic trong `llm_manager.py`
-2. Update configuration schema
-3. Test với provider mới
+### Add a New LLM Provider
+1. Add logic in `llm_manager.py`
+2. Update the configuration schema
+3. Test with the new provider
 
-### Thêm Document Type mới
-1. Thêm prompt template
+### Add a New Document Type
+1. Add a prompt template
 2. Update `document_writer.py`
-3. Thêm validation rules
+3. Add validation rules
 
 ## 📋 Requirements
 
@@ -306,12 +307,12 @@ Chỉnh sửa templates trong thư mục `templates/`:
 ## 🔍 Troubleshooting
 
 ### LLM Connection Issues
-- Kiểm tra API keys
+- Check API keys
 - Verify network connectivity
 - Check provider status
 
 ### Vector Store Issues
-- Ensure ChromaDB directory writable
+- Ensure ChromaDB directory is writable
 - Check disk space
 - Verify ChromaDB installation
 
@@ -322,10 +323,10 @@ Chỉnh sửa templates trong thư mục `templates/`:
 
 ## 🤝 Contributing
 
-1. Fork repository
-2. Create feature branch
+1. Fork the repository
+2. Create a feature branch
 3. Implement changes with tests
-4. Submit pull request
+4. Submit a pull request
 
 ## 📄 License
 
@@ -333,4 +334,5 @@ MIT License - see LICENSE file for details.
 
 ---
 
-**AI Builder** - Tự động hóa phân tích và documentation cho dự án của bạn! 🎯
+**AI Builder** - Automate analysis and documentation for your projects! 🎯
+
