@@ -190,7 +190,7 @@ class FeaturePlannerAgent:
                 prompt = detail_prompt_template.format(feature=feature)
                 detail_content = llm_manager.complete(
                     prompt=prompt,
-                    system_prompt="You are a senior product manager. Write a detailed, clear, and actionable feature specification in Markdown."
+                    system_prompt="You are a senior product manager. Write a detailed, clear, and actionable feature specification."
                 )
                 safe_name = ''.join(c if c.isalnum() or c == '_' else '_' for c in feature.lower()).strip('_')[:50]
                 file_path = os.path.join(output_dir, "features", f"{safe_name}.md")

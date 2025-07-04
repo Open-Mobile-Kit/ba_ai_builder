@@ -1,6 +1,6 @@
 llm:
   provider: ollama  # Options: ollama, openai, anthropic, gemini
-  model_name: llama3.1:8b
+  model_name: qwen3:8b
   temperature: 0.2
   max_tokens: 4000
   api_key: ""  # For OpenAI, Anthropic, etc.

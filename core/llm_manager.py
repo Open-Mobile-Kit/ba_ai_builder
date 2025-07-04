@@ -108,6 +108,7 @@ class LLMManager:
         response = self._client.chat(
             model=self.model_name,
             messages=messages,
+            think= False,
             options={
                 "temperature": self.temperature,
                 "num_predict": self.max_tokens
