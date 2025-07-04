@@ -163,7 +163,7 @@ def main():
     
     # Check LLM providers
     available_providers = check_llm_providers()
-    a
+    
     # Create sample config
     create_sample_config()
     
